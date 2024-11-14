@@ -12,7 +12,7 @@
         <input type="text" placeholder="exemplo@gmail.com">
         <input type="text" placeholder="*******************">
         <div class="btn-group">
-            <button>Entrar</button>
+            <button id="btn-entrar2">Entrar</button>
             <button id="btn-sair">Sair</button>
         </div>
     </form>
@@ -138,6 +138,12 @@
         }
     </style>
     <script>
+        document.querySelector("#btn-entrar2").addEventListener("click", function(event) {
+            event.preventDefault();
+
+            alert("Usuário não encontrado")
+        
+        })
         document.querySelector("#btn-sair").addEventListener("click", function(event) {
             event.preventDefault();
             alert("Saindo...");
